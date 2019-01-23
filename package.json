@@ -4,14 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --require @babel/register"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
+    "mocha": "^5.2.0",
     "rollup": "^1.1.0"
   },
-  "dependencies": {}
+  "babel": {
+    "plugins": ["dynamic-import-node"],
+    "presets": ["@babel/preset-env"]
+  },
+  "dependencies": {
+    "@std/esm": "^0.26.0"
+  }
 }
