@@ -21,10 +21,12 @@
     "rollup": "^1.1.0"
   },
   "babel": {
-    "plugins": ["dynamic-import-node"],
-    "presets": ["@babel/preset-env"]
+    "plugins": [
+      "dynamic-import-node"
+    ],
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
-  "dependencies": {
-    "@std/esm": "^0.26.0"
-  }
+  "dependencies": {}
 }
