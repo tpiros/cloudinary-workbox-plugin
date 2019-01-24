@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node_modules/gulp/bin/gulp.js",
     "test": "./node_modules/mocha/bin/mocha --require @babel/register"
   },
   "author": "",
