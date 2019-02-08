@@ -1,4 +1,7 @@
-/*
+var cloudinaryPlugin = (function () {
+  'use strict';
+
+  /*
     Copyright 2019 Cloudinary Ltd. All Rights Reserved.
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -9,11 +12,7 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-   */
-   
-var cloudinaryPlugin = (function () {
-  'use strict';
-
+  */
   const CloudinaryPlugin = {
     requestWillFetch(request) {
       if (/\.jpg$|.png$|.gif$|.webp$/.test(request.url)) {
@@ -23,7 +22,7 @@ var cloudinaryPlugin = (function () {
         const format = 'f_auto';
         switch ((navigator && navigator.connection) ? navigator.connection.effectiveType : '') {
           case '4g':
-            newPart = 'q_auto:good'; // q_auto === q_auto:good
+            newPart = 'q_auto:good';
           break;
     
           case '3g':

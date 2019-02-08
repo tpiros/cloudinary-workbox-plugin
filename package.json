@@ -1,14 +1,20 @@
 {
   "name": "cloudinary-workbox-plugin",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "node_modules/gulp/bin/gulp.js",
     "test": "./node_modules/mocha/bin/mocha --require @babel/register"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Tamas Piros",
+    "email": "tamas@fullstacktraining.com",
+    "url": "https://www.fullstacktraining.com"
+  },
+  "company": "Cloudinary",
+  "homepage": "https://cloudinary.com",
+  "license": "apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/polyfill": "^7.2.5",
@@ -28,5 +34,7 @@
       "@babel/preset-env"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "rollup-plugin-terser": "^4.0.4"
+  }
 }
