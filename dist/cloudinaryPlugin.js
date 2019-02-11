@@ -15,7 +15,7 @@ var cloudinaryPlugin = (function () {
   */
   const CloudinaryPlugin = {
     requestWillFetch(request) {
-      if (/\.jpg$|.png$|.gif$|.webp$/.test(request.url)) {
+      if (/\.jpg$|\.png$|\.gif$|\.webp$/.test(request.url)) {
         const url = request.url.split('/');
         const insertIndex = url.indexOf('upload');
         let newPart;
