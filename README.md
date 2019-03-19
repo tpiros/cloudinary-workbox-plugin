@@ -47,5 +47,8 @@ If you'd like to modify / build this plugin make sure to install the dependencie
 ## Build
 To build the plugin please execute `npm run build`. The result of the build is going to be a `dist` folder with a single `cloudinaryPlugin.js` file along with a `cloudinaryPlugin.min.js` file for a minified build.
 
+## Usage Instructions
+For further information please visit [https://blog.fullstacktraining.com/a-cloudinary-plugin-for-workbox/](https://blog.fullstacktraining.com/a-cloudinary-plugin-for-workbox/)
+
 ## Test
 To test the plugin please execute `npm test`.
